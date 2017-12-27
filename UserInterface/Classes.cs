@@ -111,7 +111,6 @@ namespace UserInterface
             int flag = 0;
             string str = inf.str;
             int countOfResults = 0;
-            string buf_str;
             if (inf.RegistrON)
             {
                 if (inf.UseWordWhole)
@@ -457,7 +456,6 @@ namespace UserInterface
     }
     class Searcher
     {
-        SearchData inf;
         public delegate void SearchEnd(int nubmer);
         public event SearchEnd taskEnded;
         public Task ThreadSearch(SearchData inf, DataGridView dataGrid, Form descriptor)
@@ -466,7 +464,6 @@ namespace UserInterface
                 int flag = 0;
                 string str = inf.str;
                 int countOfResults = 0;
-                string buf_str;
                 if (inf.RegistrON)
                 {
                     if (inf.UseWordWhole)

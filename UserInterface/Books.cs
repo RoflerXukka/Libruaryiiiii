@@ -16,7 +16,6 @@ namespace UserInterface
     {
         AddPoly addpoly;
         Helper helper;
-        string buffer_word;
         private List< List<DataGridViewRow> > Users;
         private bool Lock_Flag { get; set; }
         public DataGridView DataBooksGrid => DataBooks;
@@ -206,7 +205,6 @@ namespace UserInterface
             Users = new List<List<DataGridViewRow>>();
             InitializeComponent();
             Lock_Flag = false;
-            string kek = "";
             Delete.Enabled = false;
             this.friend = friend;
             MoveObj.BackColor = System.Drawing.Color.Transparent;
